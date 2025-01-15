@@ -1,0 +1,7 @@
+pymongo==4.6.1
+pandas==2.2.0
+pinecone-client==3.0.2
+tqdm==4.66.1
+numpy==1.26.3
+openai==0.28
+python-dotenv==1.0.1
