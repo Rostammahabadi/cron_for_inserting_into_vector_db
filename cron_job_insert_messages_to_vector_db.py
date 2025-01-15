@@ -157,7 +157,7 @@ async def process_messages(messages, message_type):
             
             # Get vector for individual message
             vector = await vectorize_message(message["content"])
-            print(vector)
+
             
             # Get additional context
             user_details = await get_user_details(message["user"])
@@ -251,3 +251,7 @@ async def process_all_messages():
 # Run the script
 if __name__ == "__main__":
     asyncio.run(process_all_messages())
+
+# After MongoDB connection
+print("Available databases:", client.list_database_names())
+print("Available collections:", db.list_collection_names())
